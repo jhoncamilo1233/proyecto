@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    /*header lo principal de la pagina contiene logo-iniciar sesion*/
+    .logo{
+        width: 90px;
+        height: 80px;
+        align-items: center;
+    }
+    .no{
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    .header{
+        display: flex;
+        justify-content:space-between ;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        background-color: #dee692;
+        box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+        padding: 0 20px;
+    
+    }
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    li{
+    
+    list-style: none;
+    }
+    .boton{
+        background-color: rgb(233, 157, 18);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        font-size: 0.8rem;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        transition: scale 0.2 ease;
+    }
+    
+    .menu a:hover{
+    color: orange;
+    }
+    .iniciar-sesion :hover{
+        scale: 1.05;
+        color: white;
+    }
+    .iniciar-sesion:active{
+        scale: 0.95;
+    }
+    /*nav con esto vamos a poder navegar en la web contiene el menu y el nombre del logo un buscador*/
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: none;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+        text-align: center;
+        margin-top: 5px;
+        
+    
+    }
+    .menu{
+        display: flex;
+        gap: 7rem;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;;
+        font-size: 20px;
+        
+        
+        
+    }
+    li.menu-item {
+        font-size: 16px;
+    }
+    li .menu a :hover{
+        scale: 1.05;
+    }
+    .buscador{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    /*adaptar cualquier forma*/
+    .flotante{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 40px;
+        width: 300px;
+        height: 0;
+        background-color:rgba(58, 182, 87, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height.02s cubic-bezair(0.175,0.855,0.32,10275);
+        align-items: center;
+        text-align: center;
+    }
+    .flotante li{
+        padding: 0.6rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .flotante.open{
+        height: 300px;
+    }
+    .bars{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+    @media(max-width:1100px) {
+        .header .iniciar-sesion,
+        .nav .menu,
+        .nav .buscador,
+        .header .logo {
+            display: none;
+        }
+        .nav .bars{
+            display: block;
+        }
+        .flotante{
+            display: block;
+            
+        }
+    }
+    /*formulario de resgitro cerdo*/
+    article{
+        margin-top: 20px;
+    }
+    .container {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+
+    .btn {
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: orange;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+background-color: #fff;
+color: black;
+scale: 1.05;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn:active{
+    scale: 0.95;
+}
+.form-group-1{
+    display: flex;
+    justify-content: space-around;
+}
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+    .form-group-1{
+        flex-direction: column;
+    }
+    .btn {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+/*aca estamos haciendo el pie de pagina donde contriene el logo, quienes somos y contactos */
+footer{
+    background-color: #dee692;
+    color: black;
+    padding: 20px 0;
+    box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px; /* Ajusta el tamaño de tu logo */
+    height: 40px; /* Ajusta el tamaño de tu logo */
+    margin-right: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-social {
+    text-align: center;
+
+    align-items: center;
+}
+
+.footer-social a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+        order: 1;
+        
+    }
+
+    .footer-links {
+        order: 2;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-social {
+        order: 3;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+.footer-social a{
+    color: black;
+}

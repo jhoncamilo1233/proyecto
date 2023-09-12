@@ -1,0 +1,337 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+/*header lo principal de la pagina contiene logo-iniciar sesion*/
+.logo{
+    width: 90px;
+    height: 80px;
+    align-items: center;
+}
+.no{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header{
+    display: flex;
+    justify-content:space-between ;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: #dee692;
+    box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+    padding: 0 20px;
+
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+}
+li{
+
+list-style: none;
+}
+.boton{
+    background-color: rgb(233, 157, 18);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: scale 0.2 ease;
+}
+a:hover{
+    color: orange;
+}
+.iniciar-sesion :hover{
+    scale: 1.05;
+    color: white;
+}
+.iniciar-sesion:active{
+    scale: 0.95;
+}
+/*nav con esto vamos a poder navegar en la web contiene el menu y el nombre del logo un buscador*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+    text-align: center;
+    margin-top: 5px;
+    
+
+}
+.menu{
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 20px;
+    
+    
+    
+}
+li.menu-item {
+    font-size: 16px;
+}
+li .menu a :hover{
+    scale: 1.05;
+}
+.bus{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*adaptar cualquier forma*/
+.flotante{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 40px;
+    width: 300px;
+    height: 0;
+    background-color:rgba(58, 182, 87, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height.02s cubic-bezair(0.175,0.855,0.32,10275);
+    align-items: center;
+    text-align: center;
+}
+.flotante li{
+    padding: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.flotante.open{
+    height: 300px;
+}
+.bars{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1100px) {
+    .header .iniciar-sesion,
+    .nav .menu,
+    .nav .buscador,
+    .header .logo {
+        display: none;
+    }
+    .nav .bars{
+        display: block;
+    }
+    .flotante{
+        display: block;
+        
+    }
+}
+/*comnenzamos con la mitad de la pahgina donde contiene titulos y imaganes */
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Nike Futura";
+    margin-top: 20px;
+    font-size: 40px;
+}
+.section{
+    width: 100%;
+    height: auto;
+}
+p{
+    display:flex ;
+    justify-content: center; 
+    margin-top: 10px;
+    font-size: 20px
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.img1{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+.sub-titulo{
+display: block;
+justify-content: center;
+}
+.contenido{
+    justify-content: left;
+    display: flex;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.bot{
+    color: aliceblue;
+}
+.article{
+
+padding: 20px;}
+h4{
+    
+    margin-top: 10px;
+}
+.texto{
+    padding-left: 70px;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+.texto-1{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 18px;
+}
+/*aca estamos adaptado la pagina a culaquier pantalla */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Tamaño de fuente para pantallas medianas */
+    }
+
+    p {
+        font-size: 14px; /* Tamaño de fuente para pantallas medianas */
+    }
+    .texto{
+        font-size: 18px;
+    }
+    .texto-1{
+        font-size: 18px;
+    }
+}
+
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Tamaño de fuente para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
+    }
+    .texto{
+        font-size: 14px;
+    }
+    .texto-1{
+        font-size: 14px;
+    }
+}
+/*aca estamos haciendo el pie de pagina donde contriene el logo, quienes somos y contactos */
+footer{
+    background-color: #dee692;
+    color: black;
+    padding: 20px 0;
+    box-shadow: 0px 10px 10px -6px  rgb(152, 150, 150);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px; /* Ajusta el tamaño de tu logo */
+    height: 40px; /* Ajusta el tamaño de tu logo */
+    margin-right: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-social {
+    text-align: center;
+
+    align-items: center;
+}
+
+.footer-social a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+        order: 1;
+        
+    }
+
+    .footer-links {
+        order: 2;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-social {
+        order: 3;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
