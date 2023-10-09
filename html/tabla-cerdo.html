@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/css/index..css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cerdo-tabla.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -48,7 +48,7 @@
     <div class="contenedor__flotante" id="menu">
         <ul class="Contenedor__ul">
             <div class="contenedor__salir">
-                <i id="salir"class="fa-solid fa-xmark""></i>
+                <i id="salir"class="fa-solid fa-xmark"onclick="toggleMenu()"></i>
             </div>
             <li class="menu-item"><a class="a-m" href="/html/index.html">Inicio</a></li>
             <li class="menu-item"><a class="a-m" href="/html/menu.html">Menu</a></li>
@@ -59,46 +59,51 @@
         <h2>Bienvenido al mejor software para la gestión de cerdos</h2>
         <p>Descripción breve del software y sus beneficios.</p>
     </section>
-    <div>
-        <section>
-            <img class="jhon" src="/img/veterinario-profesional-bata-blanca-mascara-jeringa-medicina-preparandose-vacunacion-cerdos-prevenir-enfermedades (1).jpg" alt="" >
-        </section>
-        
-    </div>
-    <section class="caracteristicas">
-        <h2>Características Principales</h2>
-        <p></p>
-        <div class="section__contenedor">
-            <div class="card shadow">
-                <div class="card__img">
-                <img src="" alt="">
-                </div>
-                <div class="card__texto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptates exercitationem alias quasi eos harum temporibus! Error doloremque quia explicabo id! Fugiat sapiente, consequatur accusamus tenetur ducimus laboriosam animi facere.</p>
-                </div>
+    <section class="cont__tabla">
+        <div class="contenedor__btn">
+            <div class="buscador">
+                <input class="bus" type="text" id="searchInput" placeholder="Buscar...">
+                <button class="btn" type="submit">Buscar</button>
+            <ul id="results" class="results-list">
+                <!-- Aquí se mostrarán los resultados de la búsqueda -->
+                </ul>
                 
             </div>
-            <div class="card shadow"></div>
-            <div class="card shadow"></div>
-            <div class="card shadow"></div>
+            <div class="form-group">
+                <div class="form-group--btn">
+                    
+                </div>
+                <div class="form-group--btn">
+                    <button class="btn-1" type="submit">Editar</button>
+                </div>
+                <div class="form-group--btn">
+                    <button class="btn-1" type="submit">Eliminar</button>
+                </div>
+                </div>
         </div>
+        <table>
+            <thead>
+            <tr>
+                <th>Id de Cerdo</th>
+                <th>Nombre del Cerdo</th>
+                <th>Raza del Cerdo</th>
+                <th>Peso Actual</th>
+                <th>Fecha de Nacimeinto</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>camilo</th>
+                <th>melo</th>
+                <th>melo mama</th>
+                <th>perro</th>
+                <th>bocero cacorro</th>
+            </tr>
+            <tr>
+            </tr>
+            </tbody>
+        </table>
     </section>
-
-    <section class="precios">
-        <h2>Precios</h2>
-        <p>Información sobre los planes y precios disponibles.</p>
-    </section>
-
-    <section class="contacto">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto o información de contacto.</p>
-    </section>
-
-    <footer>
-        <p>Derechos de autor © 2023 Software para Cerdos</p>
-    </footer>
-    <script src="/js/responsivo.js">
-        
-    </script>
+    <script src="/js/responsivo.js"></script>
 </body>
 </html>

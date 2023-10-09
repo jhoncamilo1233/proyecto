@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/css/index..css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/peso-registro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <header>
@@ -59,41 +60,42 @@
         <h2>Bienvenido al mejor software para la gestión de cerdos</h2>
         <p>Descripción breve del software y sus beneficios.</p>
     </section>
-    <div>
-        <section>
-            <img class="jhon" src="/img/veterinario-profesional-bata-blanca-mascara-jeringa-medicina-preparandose-vacunacion-cerdos-prevenir-enfermedades (1).jpg" alt="" >
-        </section>
-        
-    </div>
-    <section class="caracteristicas">
-        <h2>Características Principales</h2>
-        <p></p>
-        <div class="section__contenedor">
-            <div class="card shadow">
-                <div class="card__img">
-                <img src="" alt="">
+    <section class="cont_registro">
+        <div class="container">
+            <h2>Registro de peso Lechones</h2>
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="id monta">Id de Peso Lechon</label>
+                    <select id="numero" name="numero" required>
+                        <option value="">Seleccione un Id</option>
+                        <option value="1">1</option>
+                        <!-- Puedes agregar más opciones según tus necesidades -->
+                    </select>
                 </div>
-                <div class="card__texto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptates exercitationem alias quasi eos harum temporibus! Error doloremque quia explicabo id! Fugiat sapiente, consequatur accusamus tenetur ducimus laboriosam animi facere.</p>
+                <div class="form-group">
+                    <label for="id cerdo">Id del Lechon</label>
+                    <select id="numero" name="numero" required>
+                        <option value="">Seleccione un Id</option>
+                        <option value="1">1</option>
+                        <!-- Puedes agregar más opciones según tus necesidades -->
+                    </select>
+                </div>  
+                <div class="form-group">
+                    <label for="text">Peso del Lechon</label>
+                    <input type="text" id="nombre del cerdo" name=""nombre del cerdo" required>
+                </div> 
+                <div class="form-group">
+                    <label for="text">Fecha de Registro</label>
+                    <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
                 </div>
-                
-            </div>
-            <div class="card shadow"></div>
-            <div class="card shadow"></div>
-            <div class="card shadow"></div>
+                <div class="form-group-1">
+            <button class="btn" type="submit">Registrar</button>
+            <button class="btn" type="submit" id="">Listas</button>
+                    
+                </div>
+            </form>
         </div>
     </section>
-
-    <section class="precios">
-        <h2>Precios</h2>
-        <p>Información sobre los planes y precios disponibles.</p>
-    </section>
-
-    <section class="contacto">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto o información de contacto.</p>
-    </section>
-
     <footer>
         <p>Derechos de autor © 2023 Software para Cerdos</p>
     </footer>

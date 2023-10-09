@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 header{
     display: flex;
@@ -131,87 +133,6 @@ li > a{
     margin: auto;
 
 }
-/* Estilos de secciones */
-.contenido {
-    background-color: #f0f0f0;
-    padding: 40px;
-    text-align: center;
-}
-
-
-.caracteristicas {
-    background-color: #fff;
-    padding: 50px;
-    
-}
-.caracteristicas__img{
-    padding: 10px;
-}
-
-.jhon{
-    width: 100%;
-    height:auto;
-    padding: 0;
-
-}
-
-.caracteristicas ul {
-    list-style: none;
-    padding: 0;
-}
-
-.caracteristicas li {
-    margin: 30px;
-}
-.caracteristicas > h2{
-text-align: center;
-margin-bottom: 40px;
-
-}
-.precios {
-    background-color: #f0f0f0;
-    padding: 40px;
-}
-
-.contacto {
-    background-color: #fff;
-    padding: 40px;
-}
-
-/* Estilos de pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.card {
-    width: 190px;
-    height: 254px;
-    background: white;
-    border-radius: 10px;
-    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin-bottom: 40px;
-}
-    .shadow {
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                0 0  0 2px rgb(190, 190, 190),
-                0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-.card:hover{
-    scale: 1.1;
-    cursor: pointer;
-    transition: 0.5;
-}
-
-.section__contenedor{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex: 4;
-    margin: 20px;
-    margin-bottom: 10px;
-}
 .contenedor__flotante li > a{
     color: #000;
 }
@@ -228,9 +149,6 @@ footer {
     transition: height.02s cubic-bezair(0.175,0.855,0.32,10275);
 
 }
-.Contenedor__ul{
-    list-style: none;
-}
 @media(max-width:1100px){
     .ul__menu,
     .header__contenedor--items{
@@ -244,17 +162,133 @@ footer {
     }
 }
 .Contenedor__ul{
-    margin: 10px;
     color: #fff;
+    width: 160px;
+    list-style: none;
 }
 .Contenedor__ul li a{
-    color: #f0f0f0;
+    color: #000;
+}.contenido {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
 }
 
-#salir{
-    
-}
 .contenedor__salir{
     display: flex;
     justify-content: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.menu-item{
+    text-align: center;
+    align-items: center;
+    height: 40px;
+}
+.cont__registro{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    width: 75%;
+    height: 300px;
+    margin: auto;
+}
+.bot {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid orange;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.bot:hover{
+    scale: 1.05;
+    background-color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.col{
+    color: #dfdede;
+}
+.col:hover{
+    color: black;
+}
+.bot:active{
+    scale: 0.95;
+}
+button{
+    background-color: rgb(251, 171, 24);
+    cursor: pointer;
+}
+
+.adicion{
+    margin: 0 15px;
+    font-size: 21px;
+    margin-bottom: 30px;
+    
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+}
+.registro > h1{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+    .adicion{
+        font-size: 14px;
+    }
+    .bot{
+        font-size: 18px;
+    }
+    .container{
+        width: 90%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: .1px;
+    }
+    .cont__registro{
+        width: 100%;
+        height: 800px;
+    }
+    .registro > h1{
+    font-size: 40px;
+    }
+}
+
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media screen and (max-width: 410px) {
+    .adicion{
+        font-size: 14px;
+        
+    }
+    .bot{
+        font-size: 14px;
+    }
+    
+}
+.registro{
+    margin-bottom: 10px;
 }
